@@ -1,0 +1,19 @@
+{
+  "name": "bookmark-template",
+  "version": "1.0.0",
+  "description": "A simple single webpage template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FireEagle829/Bookmark-Webiste.git"
+  },
+  "author": "Mohamed Emad & Fatima Khaled",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FireEagle829/Bookmark-Webiste/issues"
+  },
+  "homepage": "https://github.com/FireEagle829/Bookmark-Webiste#readme"
+}
