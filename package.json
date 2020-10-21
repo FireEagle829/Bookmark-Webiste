@@ -2,7 +2,7 @@
   "name": "bookmark-template",
   "version": "1.0.0",
   "description": "A simple single webpage template",
-  "main": "index.js",
+  "main": "JS/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/FireEagle829/Bookmark-Webiste/issues"
   },
-  "homepage": "https://github.com/FireEagle829/Bookmark-Webiste#readme"
+  "homepage": "https://github.com/FireEagle829/Bookmark-Webiste#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
 }
