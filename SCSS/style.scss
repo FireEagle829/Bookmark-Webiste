@@ -1,0 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/variables";
+@import "components/accordion";
+@import "components/buttons";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/navigation";
+@import "layout/header";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+    font-family: $font-primary;
+}
