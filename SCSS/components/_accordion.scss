@@ -1,0 +1,67 @@
+.accordion-section {
+    .container {
+        h3 {
+            text-align: center;
+        }
+        .accordion-section-header-text {
+            width: 50%;
+            color: $color-neutral-grayish-blue;
+            margin: auto;
+            text-align: center;
+        }
+        .accordion {
+            width: 50%;
+            margin: auto;
+            .accordion-slide {
+                border-top: 1px solid $color-neutral-grayish-blue;
+                cursor: pointer;
+                padding: 15px 10px 15px 10px;
+                .accordion-slide-container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                .accordion-answer {
+                    max-height: 0;
+                    overflow: hidden;
+                    color: $color-neutral-grayish-blue;
+                    transition: 0.5s max-height ease-in-out;
+                }
+            }
+            .accordion-slide:hover {
+                span {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accordion-section {
+        .container {
+            width: 100% !important;
+            overflow: visible;
+        }
+        .accordion-section-header-text {
+            width: 100% !important;
+        }
+        .accordion {
+            width: 100% !important;
+            overflow: visible;
+            .accordion-slide-container {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                width: 100% !important;
+            }
+            .accordion-slide {
+                overflow: visible;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                span {
+                    width: fit-content !important;
+                }
+            }
+        }
+    }
+}

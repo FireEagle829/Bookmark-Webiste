@@ -1,3 +1,78 @@
+.accordion-section .container h3 {
+  text-align: center;
+}
+
+.accordion-section .container .accordion-section-header-text {
+  width: 50%;
+  color: #9194a1;
+  margin: auto;
+  text-align: center;
+}
+
+.accordion-section .container .accordion {
+  width: 50%;
+  margin: auto;
+}
+
+.accordion-section .container .accordion .accordion-slide {
+  border-top: 1px solid #9194a1;
+  cursor: pointer;
+  padding: 15px 10px 15px 10px;
+}
+
+.accordion-section .container .accordion .accordion-slide .accordion-slide-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accordion-section .container .accordion .accordion-slide .accordion-answer {
+  max-height: 0;
+  overflow: hidden;
+  color: #9194a1;
+  -webkit-transition: 0.5s max-height ease-in-out;
+  transition: 0.5s max-height ease-in-out;
+}
+
+.accordion-section .container .accordion .accordion-slide:hover span {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .accordion-section .container {
+    width: 100% !important;
+    overflow: visible;
+  }
+  .accordion-section .accordion-section-header-text {
+    width: 100% !important;
+  }
+  .accordion-section .accordion {
+    width: 100% !important;
+    overflow: visible;
+  }
+  .accordion-section .accordion .accordion-slide-container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 100% !important;
+  }
+  .accordion-section .accordion .accordion-slide {
+    overflow: visible;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .accordion-section .accordion .accordion-slide span {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
+}
+
 .download-extentions .container .grid {
   height: 500px;
   display: -ms-grid;
@@ -77,6 +152,29 @@
   text-align: center;
   margin: auto;
   width: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .download-extentions p {
+    width: 100% !important;
+  }
+  .download-extentions .grid {
+    grid-column-gap: 20px !important;
+  }
+  .download-extentions .grid a {
+    padding: 5px 10px 5px 10px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .download-extentions .grid {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    grid-row-gap: 50px;
+    height: -webkit-fit-content !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
 }
 
 * {

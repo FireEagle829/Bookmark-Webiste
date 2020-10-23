@@ -63,3 +63,27 @@
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .download-extentions {
+        p {
+            width: 100% !important;
+        }
+        .grid {
+            grid-column-gap: 20px !important;
+            a {
+                padding: 5px 10px 5px 10px !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .download-extentions {
+        .grid {
+            grid-template-columns: 1fr !important;
+            grid-row-gap: 50px;
+            height: fit-content !important; 
+        }
+    }
+}
