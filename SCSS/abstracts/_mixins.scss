@@ -1,0 +1,12 @@
+@mixin mainButton {
+    color: white;
+    text-decoration: none;
+    background-color: $color-primary-soft-blue;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}

@@ -44,6 +44,28 @@
   text-decoration: underline;
 }
 
+.accordion-section .container a {
+  color: white;
+  text-decoration: none;
+  background-color: #5368df;
+  border-radius: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  padding: 10px 20px 10px 20px;
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+.accordion-section .container a:hover {
+  background-color: #7e8ee7;
+}
+
 @media screen and (max-width: 768px) {
   .accordion-section .container {
     width: 100% !important;
@@ -70,6 +92,149 @@
     width: -webkit-fit-content !important;
     width: -moz-fit-content !important;
     width: fit-content !important;
+  }
+}
+
+.footer-upper-section {
+  background-color: #5368df;
+  color: white;
+  text-align: center;
+}
+
+.footer-upper-section p {
+  letter-spacing: 5px;
+}
+
+.footer-upper-section h2 {
+  width: 450px;
+  margin: auto;
+}
+
+.footer-upper-section .email-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+  margin: auto;
+}
+
+.footer-upper-section input {
+  border: none;
+  border-radius: 5px;
+  padding: 6px;
+  outline: none;
+  width: 320px;
+}
+
+.footer-upper-section a,
+.footer-upper-section a:visited,
+.footer-upper-section a:link {
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  background-color: #fa5757;
+  color: white;
+  -webkit-transition: 0.3s ease-in-out background-color;
+  transition: 0.3s ease-in-out background-color;
+  text-decoration: none;
+}
+
+.footer-upper-section a:hover {
+  background-color: #fb8888;
+}
+
+footer {
+  background-color: #252b46;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container .footer-flex-primary {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 500px;
+}
+
+footer .container .footer-flex-primary a {
+  font-size: 0.85rem;
+  color: white;
+  letter-spacing: 2px;
+}
+
+footer .container .footer-flex-secondary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-upper-section h2 {
+    width: 100% !important;
+  }
+  .footer-upper-section .email-form {
+    width: 100% !important;
+  }
+  .footer-upper-section .email-form input {
+    width: 60%;
+  }
+  footer .container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  footer .container .footer-flex-primary {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  footer .container .footer-flex-primary a,
+  footer .container .footer-flex-primary img {
+    margin-bottom: 15px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .email-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email-form input {
+    width: 100% !important;
+    margin-bottom: 15px;
   }
 }
 

@@ -1,0 +1,103 @@
+.footer-upper-section {
+    background-color: $color-primary-soft-blue;
+    color: white;
+    text-align: center;
+    p {
+        letter-spacing: 5px;
+    }
+    h2 {
+        width: 450px;
+        margin: auto;
+    }
+    .email-form {
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+        margin: auto;
+    }
+    input {
+        border: none;
+        border-radius: 5px;
+        padding: 6px;
+        outline: none;
+        width: 320px;
+    }
+    a,
+    a:visited,
+    a:link {
+        padding: 10px 20px 10px 20px;
+        border-radius: 6px;
+        background-color: $color-primary-soft-red;
+        color: white;
+        transition: 0.3s ease-in-out background-color;
+        text-decoration: none;
+    }
+    a:hover {
+        background-color: lighten($color: $color-primary-soft-red, $amount: 10);
+    }
+}
+
+
+footer {
+    background-color: $color-neutral-dark-blue;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .footer-flex-primary {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            width: 500px;
+            a {
+                font-size: 0.85rem;
+                color: white;
+                letter-spacing: 2px;
+            }
+        }
+        .footer-flex-secondary {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-upper-section {
+        h2 {
+            width: 100% !important;
+        }
+        .email-form {
+            width: 100% !important;
+            input {
+                width: 60%;
+            }
+        }
+    }
+    footer {
+        .container {
+            flex-direction: column !important;
+            align-items: center;
+            justify-content: center !important;
+            .footer-flex-primary {
+                flex-direction: column;
+                justify-content: center;
+                a,
+                img {
+                    margin-bottom: 15px !important;
+                }
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .email-form {
+        flex-direction: column;
+        input {
+            width: 100% !important;
+            margin-bottom: 15px;
+        }
+    }
+}

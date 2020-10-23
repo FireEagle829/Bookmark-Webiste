@@ -34,6 +34,12 @@
                 }
             }
         }
+        a {
+            @include mainButton;
+        }
+        a:hover {
+            background-color: lighten($color: $color-primary-soft-blue, $amount: 10);
+        }
     }
 }
 
